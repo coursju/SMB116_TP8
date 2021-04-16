@@ -1,0 +1,4 @@
+#Fri Apr 16 12:36:01 RET 2021
+base.0=/home/dev/Cours CNAM/SMB116/TP/tp8/TP8/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
