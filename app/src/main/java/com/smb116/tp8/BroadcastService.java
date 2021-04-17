@@ -6,6 +6,7 @@ import android.content.IntentFilter;
 import android.os.Binder;
 import android.os.IBinder;
 import android.os.Messenger;
+import android.os.RemoteException;
 import android.util.Log;
 
 public class BroadcastService extends Service {
@@ -29,13 +30,17 @@ public class BroadcastService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         this.intent = intent;
-        startSMSReceiver();
-        return binder;
+        /** Question 1 */
+//        startSMSReceiver();
+//        return binder;
+        /** Question 2 */
+        return mBinder;
     }
 
     @Override
     public boolean onUnbind(Intent intent) {
-        stopSMSReceiver();
+        /** Question 1 */
+//        stopSMSReceiver();
         return super.onUnbind(intent);
     }
 
@@ -55,6 +60,28 @@ public class BroadcastService extends Service {
         Log.i(TAG, "stopSMSReceiver");
         unregisterReceiver(smsReceiver);
     }
+
+    /** Question 2 */
+    IBroadcastService.Stub mBinder = new IBroadcastService.Stub() {
+        @Override
+        public void startAIDLSMSReceiver() throws RemoteException {
+            Log.i(TAG, "startAIDLSMSReceiver");
+
+            if (intent != null) {
+                filter = intent.getStringExtra("filter");
+                messenger = (Messenger) intent.getExtras().get("messager");
+                smsReceiver = new SMSReceiver(getApplicationContext(), messenger, filter);
+
+                registerReceiver(smsReceiver, new IntentFilter("android.provider.Telephony.SMS_RECEIVED"));
+            }
+        }
+
+        @Override
+        public void stopAIDLSMSReceiver() throws RemoteException {
+            Log.i(TAG, "stopAIDLSMSReceiver");
+            unregisterReceiver(smsReceiver);
+        }
+    };
 }
 
 

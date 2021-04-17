@@ -15,6 +15,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.Parcelable;
+import android.os.RemoteException;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
@@ -62,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
                     "GetPositionOffHandler ";
     private String mess ="";
 
+    IBroadcastService iBroadcastService;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        /** Question 2 */
+        bindBroadcastService();
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,22 +85,33 @@ public class MainActivity extends AppCompatActivity {
         checkForPermission();
     }
 
-    public void onClickStart(View view){
-        Intent intent = new Intent(this,BroadcastService.class);
-        messager = new Messenger(handler);
-        intent.putExtra("messager", messager);
-        intent.putExtra("filter", filter);
-        bindService(intent, connection, Context.BIND_AUTO_CREATE);
+    public void onClickStart(View view) throws RemoteException {
+        /** Question 1 */
+//        bindBroadcastService();
+        /** Question 2 */
+        iBroadcastService.startAIDLSMSReceiver();
 
         Toast.makeText(getApplicationContext(),"Service started",Toast.LENGTH_SHORT).show();
         Log.i(TAG,"Service started");
     }
 
-    public void onClickStop(View view){
-        if (mBound) unbindService(connection);
+    public void onClickStop(View view) throws RemoteException {
+        /** Question 1 */
+//        if (mBound) unbindService(connection);
+        /** Question 2 */
+        iBroadcastService.stopAIDLSMSReceiver();
+
         Toast.makeText(getApplicationContext(),"Service stopped",Toast.LENGTH_SHORT).show();
         Log.i(TAG,"Service stopped");
         mBound = false;
+    }
+
+    public void bindBroadcastService(){
+        Intent intent = new Intent(this,BroadcastService.class);
+        messager = new Messenger(handler);
+        intent.putExtra("messager", messager);
+        intent.putExtra("filter", filter);
+        bindService(intent, connection, Context.BIND_AUTO_CREATE);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -141,8 +163,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onServiceConnected(ComponentName className,
                                            IBinder service) {
-                BroadcastService.LocalBinder binder = (BroadcastService.LocalBinder) service;
-                mService = binder.getService();
+                /** Question 1 */
+//                BroadcastService.LocalBinder binder = (BroadcastService.LocalBinder) service;
+//                mService = binder.getService();
+                /** Question 2 */
+                iBroadcastService = IBroadcastService.Stub.asInterface(service);
                 mBound = true;
             }
 

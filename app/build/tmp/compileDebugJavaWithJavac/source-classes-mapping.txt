@@ -4,15 +4,15 @@ com/smb116/tp8/CoR/ChainHandler.java
  com.smb116.tp8.CoR.ChainHandler
 com/smb116/tp8/CoR/DeleteAccessHandler.java
  com.smb116.tp8.CoR.DeleteAccessHandler
+com/smb116/tp8/SMSReceiver.java
+ com.smb116.tp8.SMSReceiver
+com/smb116/tp8/IBroadcastService.java
+ com.smb116.tp8.IBroadcastService
+ com.smb116.tp8.IBroadcastService$Default
+ com.smb116.tp8.IBroadcastService$Stub
+ com.smb116.tp8.IBroadcastService$Stub$Proxy
 com/smb116/tp8/CoR/GetStatutOnHandler.java
  com.smb116.tp8.CoR.GetStatutOnHandler
-com/smb116/tp8/BroadcastService.java
- com.smb116.tp8.BroadcastService
- com.smb116.tp8.BroadcastService$LocalBinder
-com/smb116/tp8/CoR/BaseHandler.java
- com.smb116.tp8.CoR.BaseHandler
-com/smb116/tp8/CoR/TraceHandler.java
- com.smb116.tp8.CoR.TraceHandler
 com/smb116/tp8/CoR/RequestAccessHandler.java
  com.smb116.tp8.CoR.RequestAccessHandler
 com/smb116/tp8/CoR/ConfigureAccessHandler.java
@@ -23,12 +23,18 @@ com/smb116/tp8/CoR/PSWHandler.java
  com.smb116.tp8.CoR.PSWHandler
 com/smb116/tp8/CoR/RequestStatutHandler.java
  com.smb116.tp8.CoR.RequestStatutHandler
-com/smb116/tp8/SMSReceiver.java
- com.smb116.tp8.SMSReceiver
+com/smb116/tp8/CoR/TraceHandler.java
+ com.smb116.tp8.CoR.TraceHandler
 com/smb116/tp8/CoR/GetPositionOnHandler.java
  com.smb116.tp8.CoR.GetPositionOnHandler
 com/smb116/tp8/CoR/GetPositionOffHandler.java
  com.smb116.tp8.CoR.GetPositionOffHandler
+com/smb116/tp8/CoR/BaseHandler.java
+ com.smb116.tp8.CoR.BaseHandler
+com/smb116/tp8/BroadcastService.java
+ com.smb116.tp8.BroadcastService
+ com.smb116.tp8.BroadcastService$1
+ com.smb116.tp8.BroadcastService$LocalBinder
 com/smb116/tp8/MainActivity.java
  com.smb116.tp8.MainActivity
  com.smb116.tp8.MainActivity$1

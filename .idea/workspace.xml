@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BranchesTreeState">
@@ -27,14 +28,43 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bd5db9f-1206-4dbe-84fe-b012e10e2284" name="Default Changelist" comment="" />
+    <list default="true" id="2bd5db9f-1206-4dbe-84fe-b012e10e2284" name="Default Changelist" comment="Question 1">
+      <change afterPath="$PROJECT_DIR$/app/src/main/aidl/com/smb116/tp8/IBroadcastService.aidl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/TP8.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/TP8.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService$LocalBinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService$LocalBinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService$LocalBinder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService$LocalBinder.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/BroadcastService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/BroadcastService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/MainActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[CNAM_Pixel_3a_API_30]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VARIOUS_TESTS_Pixel_4_API_29]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,7 +78,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qy8AiFXRgF9boXMwzP969cOPHf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +88,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VARIOUS_TESTS_Pixel_4_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-16T06:39:16.781Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-17T10:39:34.595Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -155,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618563374742</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Question 1">
+      <created>1618564249399</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618564249399</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,38 +229,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="Question 1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1618558549359">
+    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1618655751971">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1618558549359" />
+    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1618655751971" />
     <state x="2568" y="842" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618557070417">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2568" y="842" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618557070417" />
-    <state x="2050" y="127" width="1570" height="1933" key="AVDManager" timestamp="1618555467028">
+    <state x="2050" y="127" width="1570" height="1933" key="AVDManager" timestamp="1618656069546">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2050" y="127" width="1570" height="1933" key="AVDManager/0.27.3840.2133@0.27.3840.2133" timestamp="1618555467028" />
-    <state x="2618" y="854" width="447" height="505" key="FileChooserDialogImpl" timestamp="1618563610645">
+    <state x="2050" y="127" width="1570" height="1933" key="AVDManager/0.27.3840.2133@0.27.3840.2133" timestamp="1618656069546" />
+    <state x="2618" y="854" width="447" height="505" key="FileChooserDialogImpl" timestamp="1618564172569">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2618" y="854" width="447" height="505" key="FileChooserDialogImpl/0.27.3840.2133@0.27.3840.2133" timestamp="1618563610645" />
-    <state width="1832" height="632" key="GridCell.Tab.0.bottom" timestamp="1618559099583">
+    <state x="2618" y="854" width="447" height="505" key="FileChooserDialogImpl/0.27.3840.2133@0.27.3840.2133" timestamp="1618564172569" />
+    <state width="1812" height="632" key="GridCell.Tab.0.bottom" timestamp="1618590161733">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1832" height="632" key="GridCell.Tab.0.bottom/0.27.3840.2133@0.27.3840.2133" timestamp="1618559099583" />
-    <state width="1832" height="632" key="GridCell.Tab.0.center" timestamp="1618559099583">
+    <state width="1812" height="632" key="GridCell.Tab.0.bottom/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161733" />
+    <state width="1812" height="632" key="GridCell.Tab.0.center" timestamp="1618590161732">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1832" height="632" key="GridCell.Tab.0.center/0.27.3840.2133@0.27.3840.2133" timestamp="1618559099583" />
-    <state width="1832" height="632" key="GridCell.Tab.0.left" timestamp="1618559099583">
+    <state width="1812" height="632" key="GridCell.Tab.0.center/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161732" />
+    <state width="1812" height="632" key="GridCell.Tab.0.left" timestamp="1618590161732">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1832" height="632" key="GridCell.Tab.0.left/0.27.3840.2133@0.27.3840.2133" timestamp="1618559099583" />
-    <state width="1832" height="632" key="GridCell.Tab.0.right" timestamp="1618559099583">
+    <state width="1812" height="632" key="GridCell.Tab.0.left/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161732" />
+    <state width="1812" height="632" key="GridCell.Tab.0.right" timestamp="1618590161732">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1832" height="632" key="GridCell.Tab.0.right/0.27.3840.2133@0.27.3840.2133" timestamp="1618559099583" />
+    <state width="1812" height="632" key="GridCell.Tab.0.right/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161732" />
     <state x="2368" y="728" width="1022" height="737" key="SettingsEditor" timestamp="1618564119903">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
@@ -232,18 +269,18 @@
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2722" y="965" width="324" height="264" key="VCS.EditChangelistDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618562627729" />
-    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618563404181">
+    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618564340991">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1618563404181" />
+    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1618564340991" />
     <state x="2660" y="1008" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618562589558">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2660" y="1008" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.3840.2133@0.27.3840.2133" timestamp="1618562589558" />
-    <state x="2651" y="994" width="465" height="206" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1618562581068">
+    <state x="2651" y="994" width="465" height="206" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1618564319860">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2651" y="994" width="465" height="206" key="git4idea.remote.GitConfigureRemotesDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618562581068" />
+    <state x="2651" y="994" width="465" height="206" key="git4idea.remote.GitConfigureRemotesDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618564319860" />
     <state x="2500" y="990" width="768" height="214" key="git4idea.ui.GitResetDialog" timestamp="1618563577704">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
