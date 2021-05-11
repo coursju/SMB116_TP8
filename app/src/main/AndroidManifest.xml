@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,9 +18,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP8">
         <service
-            android:name=".BroadcastService"
+            android:name=".tp9_sensors_extras.StatusAndLocationService"
             android:enabled="true"
             android:exported="true"></service>
+        <service
+            android:name=".BroadcastService"
+            android:enabled="true"
+            android:exported="true" />
 
         <activity android:name=".MainActivity">
             <intent-filter>

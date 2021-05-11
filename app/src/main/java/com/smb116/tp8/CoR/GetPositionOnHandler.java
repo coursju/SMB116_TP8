@@ -5,6 +5,8 @@ import android.os.Messenger;
 import android.telephony.SmsManager;
 import android.util.Log;
 
+import com.smb116.tp8.tp9_sensors_extras.Tp9Sensors;
+
 public class GetPositionOnHandler extends BaseHandler {
 
     private final String TAG = "GetPositionOnHandler";
@@ -28,12 +30,18 @@ public class GetPositionOnHandler extends BaseHandler {
                 String accessNumber = readConfiguration("188");
                 if (accessNumber == null){
                     Log.i(TAG, "OK!");
-                    SmsManager.getDefault().sendTextMessage(number, null, "OK!", null, null);
+                    /**Question TP8 */
+//                SmsManager.getDefault().sendTextMessage(number, null, "OK!", null, null);
+                    /**Question TP9 */
+                    Tp9Sensors.getInstance(context).bindForPeriodicStatus(number,messenger, Integer.parseInt(strTab[1]));
                     sendMessage(messenger, TAG+": "+getDate());
                 }else if (accessNumber.equals(number)
                         || accessNumber.equals("null")){
                     Log.i(TAG, "OK!");
-                    SmsManager.getDefault().sendTextMessage(number, null, "OK!", null, null);
+                    /**Question TP8 */
+//                SmsManager.getDefault().sendTextMessage(number, null, "OK!", null, null);
+                    /**Question TP9 */
+                    Tp9Sensors.getInstance(context).bindForPeriodicStatus(number,messenger, Integer.parseInt(strTab[1]));
                     sendMessage(messenger, TAG+": "+getDate());
 
                 }else{

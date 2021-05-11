@@ -38,6 +38,7 @@ import com.smb116.tp8.CoR.PSWHandler;
 import com.smb116.tp8.CoR.RequestAccessHandler;
 import com.smb116.tp8.CoR.RequestStatutHandler;
 import com.smb116.tp8.CoR.TraceHandler;
+import com.smb116.tp8.tp9_sensors_extras.Tp9Sensors;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         this.containerLayout = findViewById(R.id.container_layout);
         this.infosTxt = findViewById(R.id.infos_txt);
-
+//        new Tp9Sensors(this).bindForPeriodicStatus("",messager, 10000);
         configureHandler();
         checkForPermission();
     }
@@ -121,11 +122,25 @@ public class MainActivity extends AppCompatActivity {
                 PackageManager.PERMISSION_GRANTED
         && ContextCompat.checkSelfPermission(
                 getApplicationContext(), Manifest.permission.SEND_SMS) ==
+                PackageManager.PERMISSION_GRANTED
+        && ContextCompat.checkSelfPermission(
+                getApplicationContext(), Manifest.permission.ACCESS_COARSE_LOCATION) ==
+                PackageManager.PERMISSION_GRANTED
+        && ContextCompat.checkSelfPermission(
+                getApplicationContext(), Manifest.permission.INTERNET) ==
+                PackageManager.PERMISSION_GRANTED
+        && ContextCompat.checkSelfPermission(
+                getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) ==
                 PackageManager.PERMISSION_GRANTED)
         {
             this.containerLayout.setVisibility(View.VISIBLE);
         } else {
-            requestPermissions(new String[] { Manifest.permission.RECEIVE_SMS, Manifest.permission.SEND_SMS }, REQUEST_CODE);
+            requestPermissions(new String[] { Manifest.permission.RECEIVE_SMS,
+                    Manifest.permission.SEND_SMS,
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.INTERNET},
+                    REQUEST_CODE);
         }
     }
 

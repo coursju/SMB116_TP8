@@ -9,6 +9,9 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -28,8 +31,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bd5db9f-1206-4dbe-84fe-b012e10e2284" name="Default Changelist" comment="Question 1">
-      <change afterPath="$PROJECT_DIR$/app/src/main/aidl/com/smb116/tp8/IBroadcastService.aidl" afterDir="false" />
+    <list default="true" id="2bd5db9f-1206-4dbe-84fe-b012e10e2284" name="Default Changelist" comment="Question 2/ 3">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/tp9_sensors_extras/StatusAndLocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/tp9_sensors_extras/Tp9Sensors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -38,25 +43,62 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/TP8.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/TP8.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService$LocalBinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService$LocalBinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/BroadcastService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/BaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/BaseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/ConfigureAccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/ConfigureAccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/DeleteAccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/DeleteAccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetPositionOffHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetPositionOffHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetPositionOnHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetPositionOnHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetStatutOffHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetStatutOffHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetStatutOnHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/GetStatutOnHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/PSWHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/PSWHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/RequestAccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/RequestAccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/RequestStatutHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/RequestStatutHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/TraceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/CoR/TraceHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/IBroadcastService$Stub$Proxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/IBroadcastService$Stub$Proxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService$LocalBinder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService$LocalBinder.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/BroadcastService.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/SMSReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/smb116/tp8/SMSReceiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/BaseHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/BaseHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/ConfigureAccessHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/ConfigureAccessHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/DeleteAccessHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/DeleteAccessHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetPositionOffHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetPositionOffHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetPositionOnHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetPositionOnHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetStatutOffHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetStatutOffHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetStatutOnHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/GetStatutOnHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/PSWHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/PSWHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/RequestAccessHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/RequestAccessHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/RequestStatutHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/RequestStatutHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/TraceHandler.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/CoR/TraceHandler.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/IBroadcastService$Stub$Proxy.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/IBroadcastService$Stub$Proxy.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity$2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/SMSReceiver.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/smb116/tp8/SMSReceiver.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/BroadcastService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/BroadcastService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/CoR/GetPositionOffHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/CoR/GetPositionOffHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/CoR/GetPositionOnHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/CoR/GetPositionOnHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/CoR/RequestStatutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/CoR/RequestStatutHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/SMSReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/smb116/tp8/SMSReceiver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +106,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VARIOUS_TESTS_Pixel_4_API_29]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/home/dev/.android/avd/Pixel_3a_API_30_x86.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -87,10 +129,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VARIOUS_TESTS_Pixel_4_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-17T10:39:34.595Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@/home/dev/.android/avd/Pixel_3a_API_30_x86.avd" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-05-11T12:25:06.570444Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -110,6 +153,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -160,6 +204,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -192,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618564249399</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Question 2/ 3">
+      <created>1618659334735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618659334735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,41 +278,47 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="Question 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question 1" />
+    <MESSAGE value="Question 2/ 3" />
+    <MESSAGE value="TP9 extras" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP9 extras" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1618655751971">
+    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1620729622735">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1618655751971" />
+    <state x="2643" y="801" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.3840.2133@0.27.3840.2133" timestamp="1620729622735" />
     <state x="2568" y="842" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618557070417">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2568" y="842" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618557070417" />
-    <state x="2050" y="127" width="1570" height="1933" key="AVDManager" timestamp="1618656069546">
+    <state x="2050" y="127" width="1570" height="1933" key="AVDManager" timestamp="1620736437736">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2050" y="127" width="1570" height="1933" key="AVDManager/0.27.3840.2133@0.27.3840.2133" timestamp="1618656069546" />
+    <state x="2050" y="127" width="1570" height="1933" key="AVDManager/0.27.3840.2133@0.27.3840.2133" timestamp="1620736437736" />
+    <state x="2644" y="841" width="495" height="512" key="AndroidProcessChooserDialog" timestamp="1620737114549">
+      <screen x="0" y="27" width="3840" height="2133" />
+    </state>
+    <state x="2644" y="841" width="495" height="512" key="AndroidProcessChooserDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1620737114549" />
     <state x="2618" y="854" width="447" height="505" key="FileChooserDialogImpl" timestamp="1618564172569">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2618" y="854" width="447" height="505" key="FileChooserDialogImpl/0.27.3840.2133@0.27.3840.2133" timestamp="1618564172569" />
-    <state width="1812" height="632" key="GridCell.Tab.0.bottom" timestamp="1618590161733">
+    <state width="1644" height="588" key="GridCell.Tab.0.bottom" timestamp="1620745220432">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1812" height="632" key="GridCell.Tab.0.bottom/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161733" />
-    <state width="1812" height="632" key="GridCell.Tab.0.center" timestamp="1618590161732">
+    <state width="1644" height="588" key="GridCell.Tab.0.bottom/0.27.3840.2133@0.27.3840.2133" timestamp="1620745220432" />
+    <state width="1644" height="588" key="GridCell.Tab.0.center" timestamp="1620745220432">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1812" height="632" key="GridCell.Tab.0.center/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161732" />
-    <state width="1812" height="632" key="GridCell.Tab.0.left" timestamp="1618590161732">
+    <state width="1644" height="588" key="GridCell.Tab.0.center/0.27.3840.2133@0.27.3840.2133" timestamp="1620745220432" />
+    <state width="1644" height="588" key="GridCell.Tab.0.left" timestamp="1620745220432">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1812" height="632" key="GridCell.Tab.0.left/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161732" />
-    <state width="1812" height="632" key="GridCell.Tab.0.right" timestamp="1618590161732">
+    <state width="1644" height="588" key="GridCell.Tab.0.left/0.27.3840.2133@0.27.3840.2133" timestamp="1620745220432" />
+    <state width="1644" height="588" key="GridCell.Tab.0.right" timestamp="1620745220432">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state width="1812" height="632" key="GridCell.Tab.0.right/0.27.3840.2133@0.27.3840.2133" timestamp="1618590161732" />
+    <state width="1644" height="588" key="GridCell.Tab.0.right/0.27.3840.2133@0.27.3840.2133" timestamp="1620745220432" />
     <state x="2368" y="728" width="1022" height="737" key="SettingsEditor" timestamp="1618564119903">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
@@ -269,10 +327,10 @@
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2722" y="965" width="324" height="264" key="VCS.EditChangelistDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618562627729" />
-    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618564340991">
+    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618659346325">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
-    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1618564340991" />
+    <state x="2484" y="829" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.2133@0.27.3840.2133" timestamp="1618659346325" />
     <state x="2660" y="1008" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618562589558">
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
@@ -285,5 +343,9 @@
       <screen x="0" y="27" width="3840" height="2133" />
     </state>
     <state x="2500" y="990" width="768" height="214" key="git4idea.ui.GitResetDialog/0.27.3840.2133@0.27.3840.2133" timestamp="1618563577704" />
+    <state x="2561" y="522" key="run.anything.popup" timestamp="1620729381727">
+      <screen x="0" y="27" width="3840" height="2133" />
+    </state>
+    <state x="2561" y="522" key="run.anything.popup/0.27.3840.2133@0.27.3840.2133" timestamp="1620729381727" />
   </component>
 </project>

@@ -22,6 +22,7 @@ import com.smb116.tp8.CoR.PSWHandler;
 import com.smb116.tp8.CoR.RequestAccessHandler;
 import com.smb116.tp8.CoR.RequestStatutHandler;
 import com.smb116.tp8.CoR.TraceHandler;
+import com.smb116.tp8.tp9_sensors_extras.Tp9Sensors;
 
 public class SMSReceiver extends BroadcastReceiver
 {
@@ -34,6 +35,8 @@ public class SMSReceiver extends BroadcastReceiver
         this.context = context;
         this.messenger = messenger;
         this.filter = filter;
+        /** Question TP9*/
+        Tp9Sensors.getInstance(context);
     }
 
     @Override

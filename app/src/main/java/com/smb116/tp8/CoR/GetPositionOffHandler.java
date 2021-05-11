@@ -5,6 +5,8 @@ import android.os.Messenger;
 import android.telephony.SmsManager;
 import android.util.Log;
 
+import com.smb116.tp8.tp9_sensors_extras.Tp9Sensors;
+
 public class GetPositionOffHandler extends BaseHandler {
 
     private final String TAG = "GetPositionOffHandler";
@@ -26,12 +28,18 @@ public class GetPositionOffHandler extends BaseHandler {
             String accessNumber = readConfiguration("188");
             if (accessNumber == null){
                 Log.i(TAG, "OK!");
-                SmsManager.getDefault().sendTextMessage(number, null, "OK!", null, null);
+                /**Question TP8 */
+                SmsManager.getDefault().sendTextMessage(number, null, "OK! Position OFF", null, null);
+                /**Question TP9 */
+                Tp9Sensors.getInstance(context).unBindForPeriodicStatus();
                 sendMessage(messenger, TAG+": "+getDate());
             }else if (accessNumber.equals(number)
                     || accessNumber.equals("null")){
                 Log.i(TAG, "OK!");
-                SmsManager.getDefault().sendTextMessage(number, null, "OK!", null, null);
+                /**Question TP8 */
+                SmsManager.getDefault().sendTextMessage(number, null, "OK! Position OFF", null, null);
+                /**Question TP9 */
+                Tp9Sensors.getInstance(context).unBindForPeriodicStatus();
                 sendMessage(messenger, TAG+": "+getDate());
             }else{
                 Log.i(TAG, "wrong number! try again");
